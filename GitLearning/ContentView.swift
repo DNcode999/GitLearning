@@ -32,7 +32,9 @@ struct ContentView: View {
             .padding()
             .sheet(isPresented: $showSheet, content: {
                 DetailView()
+                    .presentationDetents([.fraction(0.2)])
             })
+            
         }
     }
 }
